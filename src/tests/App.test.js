@@ -30,23 +30,25 @@ describe('Testa o componente <App.js />', () => {
   it('Testa se o app é redirecionado para a URL /about ao clicar no link About', () => {
     // acessar
     const { history } = renderWithRouter(<App />);
-    const { pathname } = history.location;
     const aboutEl = screen.getByRole('link', { name: /About/i });
     // interagir
     userEvent.click(aboutEl);
     // testar
+    const { pathname } = history.location;
     expect(pathname).toBe('/about');
   });
+
   it('Ao clicar em Favorites Pokémons o app é redirecionado para URL /favorites ', () => {
     // acessar
     const { history } = renderWithRouter(<App />);
-    const { pathname } = history.location;
     const favoritePokemonEl = screen.getByRole('link', { name: /Favorite Pokémons/i });
     // interagir
     userEvent.click(favoritePokemonEl);
     // testar
+    const { pathname } = history.location;
     expect(pathname).toBe('/favorites');
   });
+
   it('Ao entrar em uma URL desconhecida o app é redirecionado para pág Not Found', () => {
     // acessar
     const { history } = renderWithRouter(<App />);
