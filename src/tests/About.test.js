@@ -1,6 +1,6 @@
 import React from 'react';
 import { About } from '../components';
-import renderWithRouter from '../components/RenderWithRouter';
+import renderWithRouter from './helpers/RenderWithRouter';
 
 const { screen } = require('@testing-library/react');
 

@@ -1,7 +1,7 @@
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 import App from '../App';
-import renderWithRouter from '../components/RenderWithRouter';
+import renderWithRouter from './helpers/RenderWithRouter';
 
 const { screen } = require('@testing-library/react');
 

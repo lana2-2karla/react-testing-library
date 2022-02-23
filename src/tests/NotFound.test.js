@@ -1,5 +1,5 @@
 import React from 'react';
-import renderWithRouter from '../components/RenderWithRouter';
+import renderWithRouter from './helpers/RenderWithRouter';
 import App from '../App';
 
 const { screen } = require('@testing-library/react');

@@ -2,7 +2,7 @@ import React from 'react';
 import userEvent from '@testing-library/user-event';
 import { FavoritePokemons } from '../components';
 import App from '../App';
-import renderWithRouter from '../components/RenderWithRouter';
+import renderWithRouter from './helpers/RenderWithRouter';
 
 const { screen } = require('@testing-library/react');
 
